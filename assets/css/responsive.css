@@ -11,10 +11,12 @@
   .navbar {
     display: none;
   }
+
   /* 2. Chuyển logo vào giữa */
   .header-top {
     position: relative;
   }
+
   .header__logo {
     position: absolute;
     left: 50%;
@@ -29,6 +31,7 @@
     left: 26px;
     color: #fff;
   }
+
   /* 4. Overlay */
   .menu-overlay {
     position: fixed;
@@ -40,11 +43,13 @@
     visibility: hidden;
     transition: 0.5s;
   }
+
   /* 5. Kiểm tra nếu checkbox được check thì hiện overlay */
   .menu-checkbox:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
   }
+
   /* 6. Code cho menu drawer */
   .menu-drawer {
     position: fixed;
@@ -55,23 +60,28 @@
     transition: 0.5s;
     padding: 60px;
   }
+
   /* 7. Kiểm tra nếu checkbox được check thì hiện menu */
   .menu-checkbox:checked ~ .menu-drawer {
     transform: translateX(0);
   }
+
   /* 8. Menu top */
   .close__menu {
     width: 24px;
     color: #fff;
   }
+
   .menu-drawer__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   #navbar__list--mobile {
     margin-top: 25px;
   }
+
   .navbar__link {
     display: block;
     font-size: 2rem;
@@ -79,6 +89,49 @@
 
   .navbar__link:hover {
     background-color: rgba(23, 83, 73, 0.295);
+  }
+
+  /* Khối hero */
+  .hero {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero__content {
+    order: 2;
+  }
+
+  .hero__media {
+    order: 1;
+  }
+
+  .hero__content {
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+  }
+
+  .hero__row {
+    justify-content: center;
+  }
+
+  /* Khối service */
+  .service__row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .service__img {
+    width: 100%;
+  }
+
+  .service__list {
+    text-align: center;
+  }
+
+  .service-item {
+    width: 90%;
+    text-align: start;
   }
 }
 
@@ -91,8 +144,6 @@
 }
 
 /* tạm ẩn phần không liên quan */
-.hero,
-.footer,
-main {
+.footer {
   display: none;
 }
